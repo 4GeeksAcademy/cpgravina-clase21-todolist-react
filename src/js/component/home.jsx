@@ -17,6 +17,7 @@ const Home = () => {
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
+    setNewEntry("");
 
     const updatedToDoList = [...toDoList, newEntry];
     setToDoList(updatedToDoList);
